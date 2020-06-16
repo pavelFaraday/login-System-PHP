@@ -21,7 +21,7 @@ if (isset($_POST['signup-submit'])) {
         header("Location: ../signup.php?error=invaliduid&mail=".$email);
         exit();
     } else if ($password !== $passwordRepeat) {
-        header("Location: ../signup.php?error=passwordcheckuid=".$username."&mail=".$email);
+        header("Location: ../signup.php?error=passwordcheck&uid=".$username."&mail=".$email);
         exit();
     } else {
         $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";

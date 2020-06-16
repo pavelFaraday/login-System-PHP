@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +30,10 @@
                     <button type="submit" name="login-submit">Login</button>
                 </form>
 
+            <!-- Signup Link -->
                 <a href="signup.php">Signup</a>
 
+            <!-- logout form -->
                 <form action="includes/logout.inc.php" method="POST" id="logout">
                     <button type="submit" name="logout-submit">Logout</button>
                 </form>
