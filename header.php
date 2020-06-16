@@ -22,20 +22,20 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Abous Us</a></li>
             </ul>
-
-            <!-- login form -->
-                <form action="includes/login.inc.php" method="POST" id="login">
-                    <input type="text" name="mailuid" placeholder="Username/E-mail..">
-                    <input type="password" name="pwd" placeholder="Password..">
-                    <button type="submit" name="login-submit">Login</button>
-                </form>
-
-            <!-- Signup Link -->
-                <a href="signup.php">Signup</a>
-
-            <!-- logout form -->
-                <form action="includes/logout.inc.php" method="POST" id="logout">
-                    <button type="submit" name="logout-submit">Logout</button>
-                </form>
+            <?php 
+                if (isset($_SESSION['userId'])) {
+                    echo '<form action="includes/logout.inc.php" method="POST" id="logout">
+                            <button type="submit" name="logout-submit">Logout</button>
+                          </form>';
+                } else {
+                    echo '<form action="includes/login.inc.php" method="POST" id="login">
+                            <input type="text" name="mailuid" placeholder="Username/E-mail..">
+                            <input type="password" name="pwd" placeholder="Password..">
+                            <button type="submit" name="login-submit">Login</button>
+                          </form>
+                        
+                          <a href="signup.php">Signup</a>';
+                }
+            ?>          
         </nav>
     </header>
