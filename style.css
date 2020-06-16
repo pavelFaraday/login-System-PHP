@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header  {
+    background-color: rgb(240, 230, 215);
+}
+nav {
+    display: flex;
+    padding: 10px;
+}
+ul  {
+    padding: 0 50px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+li>a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+div>a {
+    text-transform: uppercase;
+}
+a>img {
+    width: 30px;
+    height: auto;
+    margin-right: 50px;
+}
+#login, #logout {
+    margin: 0 20px;
+}
+#signup_main {
+    padding: 20px;
+}
+#signup{
+    padding: 30px;
+}
+#signup input {
+    display: block;
+    margin: 10px 0;
+    padding: 7px 5px;
+}
+h1, #signup, #signup_main {
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgb(231, 228, 223);
+}
+input, button {
+    padding: 5px 15px;
+}
